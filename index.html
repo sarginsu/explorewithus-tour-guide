@@ -6,73 +6,53 @@
 
     <!-- SEO: Title dengan Kata Kunci -->
     <title>ExploreWithUs Tour Guide - Wisata Gunung & Danau di Berastagi</title>
-    <!-- Perubahan pada judul untuk menyertakan kata kunci SEO spesifik -->
 
-    <!-- SEO: Meta Description -->
+    <!-- Meta Description -->
     <meta
       name="description"
-      content="ExploreWithUs Tour Guide menawarkan tur wisata Gunung Sibayak, Gunung Sinabung, dan Danau Toba di Berastagi dengan pemandu berpengalaman. Dapatkan pengalaman terbaik menjelajahi keindahan alam Sumatra Utara."
-    />
-    <!-- Menambahkan deskripsi meta untuk membantu pencarian SEO -->
-
-    <!-- SEO: Open Graph Tags untuk Social Sharing -->
-    <meta
-      property="og:title"
-      content="ExploreWithUs Tour Guide - Wisata Gunung & Danau di Berastagi"
-    />
-    <meta
-      property="og:description"
       content="ExploreWithUs Tour Guide menawarkan tur wisata Gunung Sibayak, Gunung Sinabung, dan Danau Toba di Berastagi dengan pemandu berpengalaman."
-    />
-    <meta
-      property="og:image"
-      content="https://panduasia.com/www/assets/blog_images/panduan-wisata-terbaru-di-danau-toba-sumatera-utara-2020.jpg"
-    />
-    <!-- URL gambar pratinjau (ganti sesuai kebutuhan) -->
-    <meta property="og:url" content="https://yourdomain.com" />
-    <!-- Sesuaikan dengan URL domain -->
-    <meta property="og:type" content="website" />
-
-    <!-- SEO: Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="ExploreWithUs Tour Guide - Wisata Gunung & Danau di Berastagi"
-    />
-    <meta
-      name="twitter:description"
-      content="ExploreWithUs Tour Guide menawarkan tur wisata Gunung Sibayak, Gunung Sinabung, dan Danau Toba di Berastagi dengan pemandu berpengalaman."
-    />
-    <meta
-      name="twitter:image"
-      content="https://panduasia.com/www/assets/blog_images/panduan-wisata-terbaru-di-danau-toba-sumatera-utara-2020.jpg"
     />
 
     <!-- Stylesheet Link -->
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Canonical URL untuk menghindari duplikat konten -->
-    <link rel="canonical" href="https://yourdomain.com" />
-    <!-- Ganti dengan domain situs -->
   </head>
 
   <body>
+    <!-- Bahasa Switcher -->
+    <div class="language-switcher">
+      <div class="language-dropdown">
+        <button class="dropdown-button">
+          <span class="flag-icon flag-id"></span> Indonesia
+        </button>
+        <div class="dropdown-content">
+          <a href="javascript:void(0)" onclick="changeLanguage('id')">
+            <span class="flag-icon flag-id"></span> Indonesia
+          </a>
+          <a href="javascript:void(0)" onclick="changeLanguage('en')">
+            <span class="flag-icon flag-en"></span> English
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- Header / Banner Section -->
     <header class="hero-section">
       <div class="overlay">
-        <h1>ExploreWithUs Tour Guide</h1>
-        <p>
+        <h1 data-lang-id="hero-title">ExploreWithUs Tour Guide</h1>
+        <p data-lang-id="hero-desc">
           Panduan wisata Berastagi berpengalaman yang siap menemani petualangan
           Anda menjelajahi tempat-tempat tersembunyi dan terbaik di kota wisata
           ini!
         </p>
-        <a href="#tours" class="cta-button">Lihat Paket Tur</a>
+        <a href="#tours" class="cta-button" data-lang-id="cta-see-tours"
+          >Lihat Paket Tur</a
+        >
       </div>
     </header>
 
     <!-- Paket Tur Section -->
     <main id="tours" class="tour-packages">
-      <h2>Paket Tur Populer</h2>
+      <h2 data-lang-id="popular-tours">Paket Tur Populer</h2>
 
       <!-- Gunung Sibayak -->
       <section class="tour-card">
@@ -81,11 +61,10 @@
           alt="Gunung Sibayak di Berastagi, Sumatra Utara"
           loading="lazy"
         />
-        <!-- Alt text ditambahkan dengan kata kunci SEO, loading="lazy" untuk optimasi performa -->
 
         <div class="tour-info">
-          <h3>Tur Gunung Sibayak</h3>
-          <p>
+          <h3 data-lang-id="tour-sibayak">Tur Gunung Sibayak</h3>
+          <p data-lang-id="sibayak-desc">
             Gunung Sibayak menawarkan pemandangan indah dan jalur pendakian yang
             aman bagi semua kalangan. Nikmati udara segar dan pemandangan
             spektakuler dari puncaknya.
@@ -95,6 +74,7 @@
             href="https://wa.me/6282272257804"
             class="cta-button"
             target="_blank"
+            data-lang-id="book-now"
             >Pesan Sekarang</a
           >
         </div>
@@ -107,11 +87,10 @@
           alt="Gunung Sinabung di Sumatra Utara"
           loading="lazy"
         />
-        <!-- Alt text dengan kata kunci dan optimasi lazy loading -->
 
         <div class="tour-info">
-          <h3>Tur Gunung Sinabung</h3>
-          <p>
+          <h3 data-lang-id="tour-sinabung">Tur Gunung Sinabung</h3>
+          <p data-lang-id="sinabung-desc">
             Gunung Sinabung menawarkan petualangan luar biasa dengan jalur
             pendakian yang aman dan pemandangan yang memukau. Cocok untuk
             pecinta alam dan petualangan.
@@ -121,6 +100,7 @@
             href="https://wa.me/6282272257804"
             class="cta-button"
             target="_blank"
+            data-lang-id="book-now"
             >Pesan Sekarang</a
           >
         </div>
@@ -133,11 +113,10 @@
           alt="Danau Toba di Sumatra Utara"
           loading="lazy"
         />
-        <!-- Alt text dengan kata kunci dan optimasi lazy loading -->
 
         <div class="tour-info">
-          <h3>Wisata Danau Toba</h3>
-          <p>
+          <h3 data-lang-id="tour-toba">Wisata Danau Toba</h3>
+          <p data-lang-id="toba-desc">
             Danau Toba adalah salah satu danau vulkanik terbesar di dunia,
             menawarkan pemandangan menakjubkan dan ketenangan. Cocok untuk
             perjalanan keluarga dan teman-teman.
@@ -147,6 +126,7 @@
             href="https://wa.me/6282272257804"
             class="cta-button"
             target="_blank"
+            data-lang-id="book-now"
             >Pesan Sekarang</a
           >
         </div>
@@ -155,11 +135,16 @@
 
     <!-- Info Kontak -->
     <section class="contact-section" id="contact">
-      <h2>Hubungi Pemandu Kami</h2>
-      <p>Nama Pemandu: <strong>Johanes Tarigan</strong></p>
+      <h2 data-lang-id="contact-guide">Hubungi Pemandu Kami</h2>
+      <p data-lang-id="guide-name">
+        Nama Pemandu: <strong>Johanes Tarigan</strong>
+      </p>
       <p>
         WhatsApp:
-        <a href="https://wa.me/6282272257804" target="_blank"
+        <a
+          href="https://wa.me/6282272257804"
+          target="_blank"
+          data-lang-id="wa-chat"
           >Klik di sini untuk Chat</a
         >
       </p>
@@ -181,5 +166,60 @@
     <footer>
       <p>&copy; 2024 ExploreWithUs Tour Guide</p>
     </footer>
+
+    <!-- JavaScript untuk Bahasa -->
+    <script>
+      const translations = {
+        id: {
+          "hero-title": "ExploreWithUs Pemandu Wisata",
+          "hero-desc":
+            "Panduan wisata Berastagi berpengalaman yang siap menemani petualangan Anda menjelajahi tempat-tempat tersembunyi dan terbaik di kota wisata ini!",
+          "cta-see-tours": "Lihat Paket Tur",
+          "popular-tours": "Paket Tur Populer",
+          "tour-sibayak": "Tur Gunung Sibayak",
+          "sibayak-desc":
+            "Gunung Sibayak menawarkan pemandangan indah dan jalur pendakian yang aman bagi semua kalangan. Nikmati udara segar dan pemandangan spektakuler dari puncaknya.",
+          "tour-sinabung": "Tur Gunung Sinabung",
+          "sinabung-desc":
+            "Gunung Sinabung menawarkan petualangan luar biasa dengan jalur pendakian yang aman dan pemandangan yang memukau. Cocok untuk pecinta alam dan petualangan.",
+          "tour-toba": "Wisata Danau Toba",
+          "toba-desc":
+            "Danau Toba adalah salah satu danau vulkanik terbesar di dunia, menawarkan pemandangan menakjubkan dan ketenangan. Cocok untuk perjalanan keluarga dan teman-teman.",
+          "book-now": "Pesan Sekarang",
+          "contact-guide": "Hubungi Pemandu Kami",
+          "guide-name": "Nama Pemandu: Johanes Tarigan",
+          "wa-chat": "Klik di sini untuk Chat",
+        },
+        en: {
+          "hero-title": "ExploreWithUs Tour Guide",
+          "hero-desc":
+            "Experienced Berastagi tour guides ready to accompany your adventures exploring the hidden gems and best spots in this tourist city!",
+          "cta-see-tours": "See Tour Packages",
+          "popular-tours": "Popular Tours",
+          "tour-sibayak": "Mount Sibayak Tour",
+          "sibayak-desc":
+            "Mount Sibayak offers beautiful views and safe trekking routes for everyone. Enjoy fresh air and spectacular views from the summit.",
+          "tour-sinabung": "Mount Sinabung Tour",
+          "sinabung-desc":
+            "Mount Sinabung offers an extraordinary adventure with safe trekking routes and breathtaking views. Perfect for nature lovers and adventure seekers.",
+          "tour-toba": "Lake Toba Tour",
+          "toba-desc":
+            "Lake Toba is one of the largest volcanic lakes in the world, offering stunning views and tranquility. Perfect for family and friend getaways.",
+          "book-now": "Book Now",
+          "contact-guide": "Contact Our Guide",
+          "guide-name": "Guide Name: Johanes Tarigan",
+          "wa-chat": "Click here to Chat",
+        },
+      };
+
+      function changeLanguage(lang) {
+        document.querySelectorAll("[data-lang-id]").forEach((el) => {
+          const key = el.getAttribute("data-lang-id");
+          if (translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+      }
+    </script>
   </body>
 </html>

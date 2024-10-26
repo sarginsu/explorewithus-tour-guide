@@ -161,3 +161,81 @@ footer {
 .contact-section a:hover {
   text-decoration: underline;
 }
+
+/* Gaya untuk Tombol Bahasa */
+.language-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* Agar bendera dan teks berada di satu baris */
+  gap: 8px; /* Jarak antara bendera dan teks */
+}
+
+.dropdown-button:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: flex; /* Untuk memastikan bendera dan teks berada di satu baris */
+  align-items: center; /* Vertical center alignment */
+  gap: 8px; /* Jarak antara bendera dan teks */
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.language-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Ikon Bendera */
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  display: inline-block;
+}
+
+.flag-id {
+  background: url("https://flagcdn.com/w20/id.png") no-repeat center center /
+    cover;
+}
+
+.flag-en {
+  background: url("https://flagcdn.com/w20/gb.png") no-repeat center center /
+    cover;
+}
